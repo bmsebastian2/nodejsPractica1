@@ -5,6 +5,6 @@ const server = http.createServer((req, resp) => {
   resp.end(`Hola desde vercel en el puerto, ${server.address().port}`);
 });
 
-server.listen(3000, () => {
+server.listen(0, () => {
   console.log("escuchando puesrto 3000");
 });
