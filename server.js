@@ -2,7 +2,7 @@ const http = require("node:http");
 
 const server = http.createServer((req, resp) => {
   console.log("request");
-  resp.end("HELLLO WORD");
+  resp.end(`Hola desde vercel en el puerto, ${server.address().port}`);
 });
 
 server.listen(3000, () => {
